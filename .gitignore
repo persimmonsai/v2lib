@@ -1,0 +1,7 @@
+*.v
+*.lib
+!tests/*.v
+!tests/*.lib
+parser.out
+parsetab.py
+__pycache__/

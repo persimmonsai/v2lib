@@ -1,0 +1,6 @@
+default_operating_conditions: tt_0p7500v_85c
+operating_conditions:
+  tt_0p7500v_85c:
+    process: 1
+    temperature: 85
+    voltage: 0.75

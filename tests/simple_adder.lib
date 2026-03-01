@@ -1,0 +1,321 @@
+library(simple_adder_lib) {
+  delay_model : table_lookup;
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  current_unit : "1uA";
+  leakage_power_unit : "1nW";
+
+  operating_conditions(tt_0p7500v_85c) {
+    process : 1 ;
+    temperature : 85 ;
+    voltage : 0.75 ;
+  }
+  default_operating_conditions : tt_0p7500v_85c ;
+
+  cell(simple_adder) {
+    area : 0.0;
+    pin("clk_i") {
+      direction : input;
+    }
+    pin("rst_ni") {
+      direction : input;
+    }
+    pin("a_i[31]") {
+      direction : input;
+    }
+    pin("a_i[30]") {
+      direction : input;
+    }
+    pin("a_i[29]") {
+      direction : input;
+    }
+    pin("a_i[28]") {
+      direction : input;
+    }
+    pin("a_i[27]") {
+      direction : input;
+    }
+    pin("a_i[26]") {
+      direction : input;
+    }
+    pin("a_i[25]") {
+      direction : input;
+    }
+    pin("a_i[24]") {
+      direction : input;
+    }
+    pin("a_i[23]") {
+      direction : input;
+    }
+    pin("a_i[22]") {
+      direction : input;
+    }
+    pin("a_i[21]") {
+      direction : input;
+    }
+    pin("a_i[20]") {
+      direction : input;
+    }
+    pin("a_i[19]") {
+      direction : input;
+    }
+    pin("a_i[18]") {
+      direction : input;
+    }
+    pin("a_i[17]") {
+      direction : input;
+    }
+    pin("a_i[16]") {
+      direction : input;
+    }
+    pin("a_i[15]") {
+      direction : input;
+    }
+    pin("a_i[14]") {
+      direction : input;
+    }
+    pin("a_i[13]") {
+      direction : input;
+    }
+    pin("a_i[12]") {
+      direction : input;
+    }
+    pin("a_i[11]") {
+      direction : input;
+    }
+    pin("a_i[10]") {
+      direction : input;
+    }
+    pin("a_i[9]") {
+      direction : input;
+    }
+    pin("a_i[8]") {
+      direction : input;
+    }
+    pin("a_i[7]") {
+      direction : input;
+    }
+    pin("a_i[6]") {
+      direction : input;
+    }
+    pin("a_i[5]") {
+      direction : input;
+    }
+    pin("a_i[4]") {
+      direction : input;
+    }
+    pin("a_i[3]") {
+      direction : input;
+    }
+    pin("a_i[2]") {
+      direction : input;
+    }
+    pin("a_i[1]") {
+      direction : input;
+    }
+    pin("a_i[0]") {
+      direction : input;
+    }
+    pin("b_i[31]") {
+      direction : input;
+    }
+    pin("b_i[30]") {
+      direction : input;
+    }
+    pin("b_i[29]") {
+      direction : input;
+    }
+    pin("b_i[28]") {
+      direction : input;
+    }
+    pin("b_i[27]") {
+      direction : input;
+    }
+    pin("b_i[26]") {
+      direction : input;
+    }
+    pin("b_i[25]") {
+      direction : input;
+    }
+    pin("b_i[24]") {
+      direction : input;
+    }
+    pin("b_i[23]") {
+      direction : input;
+    }
+    pin("b_i[22]") {
+      direction : input;
+    }
+    pin("b_i[21]") {
+      direction : input;
+    }
+    pin("b_i[20]") {
+      direction : input;
+    }
+    pin("b_i[19]") {
+      direction : input;
+    }
+    pin("b_i[18]") {
+      direction : input;
+    }
+    pin("b_i[17]") {
+      direction : input;
+    }
+    pin("b_i[16]") {
+      direction : input;
+    }
+    pin("b_i[15]") {
+      direction : input;
+    }
+    pin("b_i[14]") {
+      direction : input;
+    }
+    pin("b_i[13]") {
+      direction : input;
+    }
+    pin("b_i[12]") {
+      direction : input;
+    }
+    pin("b_i[11]") {
+      direction : input;
+    }
+    pin("b_i[10]") {
+      direction : input;
+    }
+    pin("b_i[9]") {
+      direction : input;
+    }
+    pin("b_i[8]") {
+      direction : input;
+    }
+    pin("b_i[7]") {
+      direction : input;
+    }
+    pin("b_i[6]") {
+      direction : input;
+    }
+    pin("b_i[5]") {
+      direction : input;
+    }
+    pin("b_i[4]") {
+      direction : input;
+    }
+    pin("b_i[3]") {
+      direction : input;
+    }
+    pin("b_i[2]") {
+      direction : input;
+    }
+    pin("b_i[1]") {
+      direction : input;
+    }
+    pin("b_i[0]") {
+      direction : input;
+    }
+    pin("valid_i") {
+      direction : input;
+    }
+    pin("sum_o[32]") {
+      direction : output;
+    }
+    pin("sum_o[31]") {
+      direction : output;
+    }
+    pin("sum_o[30]") {
+      direction : output;
+    }
+    pin("sum_o[29]") {
+      direction : output;
+    }
+    pin("sum_o[28]") {
+      direction : output;
+    }
+    pin("sum_o[27]") {
+      direction : output;
+    }
+    pin("sum_o[26]") {
+      direction : output;
+    }
+    pin("sum_o[25]") {
+      direction : output;
+    }
+    pin("sum_o[24]") {
+      direction : output;
+    }
+    pin("sum_o[23]") {
+      direction : output;
+    }
+    pin("sum_o[22]") {
+      direction : output;
+    }
+    pin("sum_o[21]") {
+      direction : output;
+    }
+    pin("sum_o[20]") {
+      direction : output;
+    }
+    pin("sum_o[19]") {
+      direction : output;
+    }
+    pin("sum_o[18]") {
+      direction : output;
+    }
+    pin("sum_o[17]") {
+      direction : output;
+    }
+    pin("sum_o[16]") {
+      direction : output;
+    }
+    pin("sum_o[15]") {
+      direction : output;
+    }
+    pin("sum_o[14]") {
+      direction : output;
+    }
+    pin("sum_o[13]") {
+      direction : output;
+    }
+    pin("sum_o[12]") {
+      direction : output;
+    }
+    pin("sum_o[11]") {
+      direction : output;
+    }
+    pin("sum_o[10]") {
+      direction : output;
+    }
+    pin("sum_o[9]") {
+      direction : output;
+    }
+    pin("sum_o[8]") {
+      direction : output;
+    }
+    pin("sum_o[7]") {
+      direction : output;
+    }
+    pin("sum_o[6]") {
+      direction : output;
+    }
+    pin("sum_o[5]") {
+      direction : output;
+    }
+    pin("sum_o[4]") {
+      direction : output;
+    }
+    pin("sum_o[3]") {
+      direction : output;
+    }
+    pin("sum_o[2]") {
+      direction : output;
+    }
+    pin("sum_o[1]") {
+      direction : output;
+    }
+    pin("sum_o[0]") {
+      direction : output;
+    }
+    pin("valid_o") {
+      direction : output;
+    }
+  }
+}
