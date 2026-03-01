@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 import argparse
+import os
+import sys
+import re
+import yaml
 import pyverilog.vparser.parser as vparser
 from pyverilog.vparser.ast import ModuleDef, Input, Output, Inout, Decl
 
